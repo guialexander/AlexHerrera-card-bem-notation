@@ -1,0 +1,95 @@
+.card{
+    display: flex;
+    background-color: white;   
+    border: rgb(17, 175, 242) 10px solid;
+    height: 20uh;
+    width: 40%;    
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card__image{
+    padding: 40px;
+}
+
+.card__image>img{
+        width: 400px;
+        height: 300px; 
+        border: rgb(17, 175, 242) 10px solid;
+        border-radius: 100px;
+
+
+}
+
+.card__estrella1 {
+	/* Espacio entre los inline-block (los hijos, los `a`) */
+    padding: 20px;
+	font-size: 0;
+    	/* Podríamos quitarlo, 
+		pero de esta manera (siempre que no le demos padding), 
+		sólo aplicará la regla .ec-stars-wrapper:hover a cuando
+		también se esté haciendo hover a alguna estrella */
+	display: inline-block;
+}
+.card__estrella1 a {
+	text-decoration: none;
+	display: inline-block;
+	/* Volver a dar tamaño al texto */
+	font-size: 32px;
+	font-size: 2rem;
+    -webkit-text-stroke: 2px violet;
+	color: white;
+	
+}
+
+.card__estrella1:hover a {
+	color: rgb(102, 0, 255);
+}
+/*
+ * El selector de hijo, es necesario para aumentar la especifidad
+ */
+.card__estrella1 > a:hover ~ a {
+	color: #888;
+}
+
+.card__description{
+    padding: 20px;
+    background-color: white;
+    border: rgb(0, 0, 11) 2px solid;
+    border-radius:10px 10px 10px 10px;
+    width:60%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color:black;
+}
+
+.card__buttons{
+    padding: 40px;
+    }
+.card__buttons--succes{
+    background-color: white;
+    border: 5px rgb(17, 175, 242) solid ;
+    color: blue;
+    font-size: 30px;
+}
+
+.card__buttons--contact{
+    background-color: white;
+    border: 5px rgb(17, 175, 242) solid ;
+    color: blue;
+    font-size: 30px;
+}
+
+.card__buttons--contact:hover{
+    background-color: rgb(8, 174, 245);
+    border: 5px rgb(17, 175, 242) solid ;
+    color: white;
+    font-size: 40px;
+}
+.card__buttons--succes:hover{
+    background-color: rgb(8, 174, 245);
+    border: 5px rgb(17, 175, 242) solid ;
+    color: white;
+    font-size: 40px;
+}
