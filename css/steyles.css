@@ -1,3 +1,4 @@
+
 .card{
     display: flex;
     background-color: white;   
@@ -14,8 +15,8 @@
 }
 
 .card__image>img{
-        width: 400px;
-        height: 300px; 
+        width: 50vh;
+        height: 40%; 
         border: rgb(17, 175, 242) 10px solid;
         border-radius: 100px;
 
