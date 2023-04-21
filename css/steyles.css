@@ -1,4 +1,6 @@
-
+body{
+    background-image: url("../img/fondo.jpg");
+}
 .card{
     display: flex;
     background-color: white;   
@@ -74,6 +76,7 @@
     border: 5px rgb(17, 175, 242) solid ;
     color: blue;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .card__buttons--contact{
@@ -81,6 +84,7 @@
     border: 5px rgb(17, 175, 242) solid ;
     color: blue;
     font-size: 30px;
+    cursor: pointer;
 }
 
 .card__buttons--contact:hover{
